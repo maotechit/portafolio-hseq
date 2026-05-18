@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ing. Mauricio Cepeda | Consultor HSEQ</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    body{
+      background:#0f172a;
+      color:white;
+      scroll-behavior:smooth;
+    }
+
+    .glass{
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .hero-bg{
+      background-image:
+      linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+      url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .news-card img{
+      height:200px;
+      object-fit:cover;
+      width:100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-black/40 backdrop-blur-lg">
+  <div class="max-w-7xl mx-auto px-3 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-orange-400">
+      CEPEDA S.A.S
+    </h1>
+
+    <div class="space-x-6 hidden md:flex">
+      <a href="#inicio" class="hover:text-orange-400">Inicio</a>
+      <a href="#servicios" class="hover:text-orange-400">Servicios</a>
+      <a href="#noticias" class="hover:text-orange-400">Noticias</a>
+      <a href="#contacto" class="hover:text-orange-400">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio"
+class="hero-bg min-h-screen flex items-center">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="glass p-10 rounded-3xl max-w-3xl">
+
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">
+        Seguridad y Salud en el trabajo-Seguridad Industrial/Higiene Industrial &
+        Gestión Ambiental y Energética.
+      </h1>
+
+      <p class="text-xl text-gray-300 mb-8">
+        Soluciones integrales en SST,
+        Higiene Industrial,
+        Gestión Ambiental/Energética y Supervisión HSE.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#servicios"
+        class="bg-orange-500 hover:bg-orange-600
+        px-6 py-3 rounded-xl font-bold">
+
+          Ver Servicios
+
+        </a>
+
+        <a href="#contacto"
+        class="border border-white px-6 py-3 rounded-xl">
+
+          Contactar
+
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios"
+class="py-24 px-6">
+
+  <div class="max-w-7xl mx-auto">
+
+    <h2 class="text-5xl font-bold text-center mb-16">
+      Servicios Profesionales
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="glass p-8 rounded-3xl">
+        <i class="fa-solid fa-helmet-safety
+        text-5xl text-orange-400 mb-6"></i>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Seguridad Industrial
+        </h3>
+
+        <p class="text-gray-300">
+          Implementación de SG-SST,
+          inspecciones,
+          matrices de riesgo
+          y capacitaciones.
+        </p>
+      </div>
+
+      <div class="glass p-8 rounded-3xl">
+        <i class="fa-solid fa-leaf
+        text-5xl text-green-400 mb-6"></i>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Gestión Ambiental
+        </h3>
+
+        <p class="text-gray-300">
+          Auditorías ISO 14001,
+          manejo ambiental,
+          residuos y sostenibilidad.
+        </p>
+      </div>
+
+      <div class="glass p-8 rounded-3xl">
+        <i class="fa-solid fa-bolt
+        text-5xl text-yellow-400 mb-6"></i>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Supervisión Eléctrica
+        </h3>
+
+        <p class="text-gray-300">
+          Supervisión de actividades
+          eléctricas industriales
+          y control HSE.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- NOTICIAS -->
+<section id="noticias"
+class="py-24 px-6 bg-slate-900">
+
+  <div class="max-w-7xl mx-auto">
+
+    <h2 class="text-5xl font-bold text-center mb-16">
+      Noticias del Sector
+    </h2>
+
+    <div id="news-container"
+    class="grid md:grid-cols-3 gap-8">
+
+      <!-- Noticias automáticas -->
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto"
+class="py-24 px-6">
+
+  <div class="max-w-4xl mx-auto text-center">
+
+    <h2 class="text-5xl font-bold mb-8">
+      Contacto
+    </h2>
+
+    <p class="text-gray-300 text-xl mb-10">
+      ¿Necesitas asesoría en SST,
+      Higiene Industrial o Gestión Ambiental?
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-6">
+
+      <a href="https://wa.me/573176667653"
+      target="_blank"
+      class="bg-green-500 hover:bg-green-600
+      px-8 py-4 rounded-2xl font-bold">
+
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+
+      </a>
+
+      <a href="mailto:ing.esp.sst@gmail.com"
+      class="bg-orange-500 hover:bg-orange-600
+      px-8 py-4 rounded-2xl font-bold">
+
+        <i class="fa-solid fa-envelope"></i>
+        Email
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center text-gray-400 border-t border-white/10">
+
+  © 2026 Mauricio HSE | Seguridad Industrial & Gestión Ambiental
+
+</footer>
+
+<!-- SCRIPT NOTICIAS -->
+<script>
+
+const API_KEY = "TU_API_KEY";
+
+fetch(`https://gnews.io/api/v4/search?q=seguridad industrial OR medio ambiente OR SST&lang=es&max=6&token=${API_KEY}`)
+
+.then(response => response.json())
+
+.then(data => {
+
+  const container = document.getElementById("news-container");
+
+  data.articles.forEach(article => {
+
+    container.innerHTML += `
+
+      <div class="glass rounded-3xl overflow-hidden news-card">
+
+        <img src="${article.image}" alt="news">
+
+        <div class="p-6">
+
+          <h3 class="text-2xl font-bold mb-4">
+            ${article.title}
+          </h3>
+
+          <p class="text-gray-300 mb-6">
+            ${article.description || ""}
+          </p>
+
+          <a href="${article.url}"
+          target="_blank"
+          class="text-orange-400 font-bold">
+
+            Leer noticia →
+
+          </a>
+
+        </div>
+
+      </div>
+
+    `;
+  });
+
+})
+
+.catch(error => console.log(error));
+
+</script>
+
+</body>
+</html>
